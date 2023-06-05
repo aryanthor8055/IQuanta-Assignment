@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Main.css";
 import Modal from "./Modal";
+import ImageHover from "./ImageHover";
 
 const Main = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,38 +37,50 @@ const Main = () => {
               <span>Gafarillo</span>
             </div>
           </div>
-          <p className="para">
-            UI/UX Designer with over 3 years of experience
-            <br />
-            with great product designing skills.
-          </p>
+          <div className="all-details">
+            <p className="para">
+              UI/UX Designer with over 3 years of experience
+              <br />
+              with great product designing skills.
+            </p>
 
-          <div>
-            <button className="hire-btn">Hire Me</button>
-            <span className="email" onClick={handleOpenModal}>
-              Email Me
-            </span>
-            <Modal isOpen={isOpen} onClose={handleCloseModal}>
-              <h1>Modal Content</h1>
-              <p>This is the content of the modal.</p>
-            </Modal>
-          </div>
-          <div className="detail">
-            <h3>3 Years</h3>
-            <p className="sub-detail">Experience</p>
-          </div>
-          <div className="detail-2">
             <div>
-              <h3>40+</h3>
-              <p className="sub-detail">Projects</p>
+              <button className="hire-btn">Hire Me</button>
+              <span className="email" onClick={handleOpenModal}>
+                Email Me
+              </span>
+              <Modal isOpen={isOpen} onClose={handleCloseModal}>
+                <h1>Modal Content</h1>
+                <p>This is the content of the modal.</p>
+              </Modal>
             </div>
-            <div>
-              <h3>Los Angeles</h3>
-              <p className="sub-detail">Living Place</p>
+            <div className="detail">
+              <h3>3 Years</h3>
+              <p className="sub-detail">Experience</p>
+            </div>
+            <div className="detail-2">
+              <div>
+                <h3>40+</h3>
+                <p className="sub-detail">Projects</p>
+              </div>
+              <div>
+                <h3>Los Angeles</h3>
+                <p className="sub-detail">Living Place</p>
+              </div>
             </div>
           </div>
         </div>
-        <div className="footer"></div>
+        <div className="footer">
+          <div className="footer-content">
+            <h2>Projects Case Studies</h2>
+            <button className="footer-btn">View Behance</button>
+          </div>
+          <div className="footer-inputs">
+            <input type="text" placeholder="Sneaker Store" className="input" />
+            <input type="text" placeholder="Flames Fitness" className="input" />
+            <input type="text" placeholder="Thenx Store" className="input" />
+          </div>
+        </div>
       </div>
       <div className="image-container">
         <img
@@ -78,11 +91,7 @@ const Main = () => {
           onMouseLeave={handleMouseLeave}
         />
 
-        {isHovered && (
-          <div className="image-details">
-            <h1>Hello bhabhutii ji</h1>
-          </div>
-        )}
+        {isHovered && <ImageHover />}
       </div>
     </div>
   );

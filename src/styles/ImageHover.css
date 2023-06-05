@@ -1,0 +1,21 @@
+.image-details {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  position: absolute;
+  top: 5rem;
+  color: white;
+}
+
+.i-detail-heading {
+  color: white;
+}
+
+.image-content {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+.sub-content {
+  display: flex;
+  gap: 5rem;
+}
