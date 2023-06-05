@@ -1,20 +1,14 @@
-import React from 'react'
-import Header from '../components/Header'
-import Main from '../components/Main'
-import Image from '../components/Image'
+import React from "react";
+import Header from "../components/Header";
+import Main from "../components/Main";
 
 const HomePage = () => {
   return (
     <>
-    <Header/>
-    <div style={{display:'flex'}}>
-    <Main/>
-    <Image/>
-  
-  </div>
+      <Header />
+      <Main />
     </>
+  );
+};
 
-  )
-}
-
-export default HomePage
+export default HomePage;

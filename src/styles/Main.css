@@ -1,4 +1,136 @@
-.Main{
-    margin-left: 8rem;
-    width: 50%;
+.container {
+  display: flex;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.sections-container {
+  display: flex;
+  flex-direction: column;
+
+  flex: 0.6;
+}
+
+.image-container {
+  flex: 0.4;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+.sections-container .main-container {
+  margin-left: 8rem;
+}
+
+.sections-container .footer {
+  background-color: black;
+  width: 100%;
+  height: 268px;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+}
+.heading-1 {
+  display: flex;
+  align-items: center;
+  font-size: 61px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  gap: 25px;
+  color: #0057ff;
+}
+.heading-2 {
+  font-size: 61px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: #0057ff;
+}
+.sub-heading-1 {
+  color: black;
+}
+.ui-btn {
+  background-color: #0057ff;
+  color: white;
+  padding: 2px 3px;
+  width: 5rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 19px;
+}
+
+.para {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.hire-btn {
+  width: 174.49px;
+  height: 55.17px;
+  left: 97px;
+  top: 430px;
+
+  background: linear-gradient(90deg, #ff6363 0%, rgba(255, 60, 60, 0.93) 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.email {
+  cursor: pointer;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.detail {
+  margin-top: 3rem;
+}
+.detail-2 {
+  margin-top: 1.5rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-detail {
+  width: 150px;
+  height: 26px;
+  left: 97px;
+  top: 569.7px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17.6564px;
+  line-height: 26px;
+
+  color: #686868;
+}
+.image-details {
+  position: absolute;
+  top: 5rem;
+}
+
+@media (max-width: 700px) {
+  .main-container {
+    width: 100vw;
+  }
+
+  .image-container img {
+    width: 100%;
+    display: none;
+  }
+  .sections-container {
+    background: url("../assets/image.jpg");
+  }
+  .sections-container .main-container {
+    margin-left: 2rem;
+  }
 }
