@@ -216,7 +216,7 @@
     display: none;
   }
   .sections-container {
-    background: url(../assets/image.jpg);
+    background: url("../../public/assets/image.jpg");
     object-fit: contain;
   }
   .sections-container .main-container {
