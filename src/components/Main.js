@@ -50,8 +50,25 @@ const Main = () => {
                 Email Me
               </span>
               <Modal isOpen={isOpen} onClose={handleCloseModal}>
-                <h1>Modal Content</h1>
-                <p>This is the content of the modal.</p>
+                <div className="modal-container">
+                  <div className="icons">
+                    <span className="ico">😄</span>
+                    <span className="ico">💣</span>
+                    <span className="ico">&#128165;</span>
+                  </div>
+                  <div className="Modal-Details">
+                    <h2>Email Me</h2>
+                    <p>
+                      I’m glad that you have shown your interest in
+                      <br /> my UI UX Designing portfolio website.
+                      <br /> Please feel free to contact me
+                    </p>
+                  </div>
+                  <div className="Modal-buttons">
+                    <button className="contactMe">Contact me</button>
+                    <span className="cancelBtn">Cancel</span>
+                  </div>
+                </div>
               </Modal>
             </div>
             <div className="detail">

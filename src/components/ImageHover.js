@@ -5,9 +5,12 @@ const ImageHover = () => {
   return (
     <div className="image-details">
       <div>
-        <h2 className="i-detail-heading">
-          Bring Real Life Ideas Into DESIGN Is My Passion
-        </h2>
+        <div className="i-heading">
+          <h2 className="i-detail-heading">
+            Bring Real Life Ideas Into{" "}
+            <span style={{ color: "#0038FF" }}>DESIGN </span>Is My Passion
+          </h2>
+        </div>
       </div>
       <div className="image-content">
         <div>

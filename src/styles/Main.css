@@ -83,6 +83,9 @@
   margin-left: 20px;
   font-weight: 500;
 }
+.email:hover {
+  text-decoration: underline;
+}
 
 .detail {
   margin-top: 3rem;
@@ -107,6 +110,55 @@
   line-height: 26px;
 
   color: #686868;
+}
+.modal-container {
+  display: flex;
+  flex-direction: column;
+}
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.icons .ico {
+  font-size: 3em;
+}
+.Modal-Details {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.Modal-buttons {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.Modal-buttons .contactMe {
+  width: 101px;
+  height: 45px;
+  background: #000000;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}
+.Modal-buttons .cancelBtn {
+  margin-top: 7px;
+  width: 52px;
+  height: 22px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.3412px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+  cursor: pointer;
 }
 
 .sections-container .footer {
@@ -155,16 +207,32 @@
   }
   .main-container {
     width: 100vw;
+    height: 100vh;
   }
 
   .image-container img {
     width: 100%;
+
     display: none;
   }
   .sections-container {
     background: url("../assets/image.jpg");
+    object-fit: contain;
   }
   .sections-container .main-container {
     margin-left: 2rem;
+  }
+  .sections-container .footer {
+    gap: 2rem;
+  }
+  .footer-content {
+    margin-left: 1rem;
+  }
+  .Modal-Details {
+    font-size: 1rem;
+    color: #000000;
+  }
+  .email:hover {
+    text-decoration: underline;
   }
 }
